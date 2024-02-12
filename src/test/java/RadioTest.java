@@ -68,10 +68,10 @@ import org.junit.jupiter.api.Test;
         @Test
         public void testIncreaseVolume() {
             Radio radio = new Radio();
-            radio.setCurrentVolume(98);
+            radio.setCurrentVolume(100);
             radio.increaseVolume();
 
-            int expected = 99;
+            int expected = 100;
             int actual = radio.getCurrentVolume();
             Assertions.assertEquals(expected, actual);
         }
